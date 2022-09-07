@@ -1,0 +1,7 @@
+# Makefile
+
+all: src/mptcphello.c
+
+
+clean:
+	rm -f mptcphello *.o
