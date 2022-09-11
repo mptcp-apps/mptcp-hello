@@ -15,10 +15,11 @@ The following examples show how enable Multipath TCP with different programming 
  - [Using Multipath TCP in C](c/README.md)
  - [Using Multipath TCP in python](python/README.md)
  - [Using Multipath TCP in perl](perl/README.md)
- 
+ - [Using Multipath TCP in Rust](rust/README.md)
 
 
-If you do not have access to the application's source code, you can use [mptcpize](https://manpages.ubuntu.com/manpages/kinetic/en/man8/mptcpize.8.html) to automatically transform the TCP socket system calls into Multipath TCP sockets. 
+
+If you do not have access to the application's source code, you can use [mptcpize](https://manpages.ubuntu.com/manpages/kinetic/en/man8/mptcpize.8.html) to automatically transform the TCP socket system calls into Multipath TCP sockets.
 
 The implementation of Multipath TCP in the Linux kernel is regularly improved. You can track the changes at https://github.com/multipath-tcp/mptcp_net-next/wiki
 
