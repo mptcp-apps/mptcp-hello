@@ -23,7 +23,7 @@ def create_socket(sockaf):
     except socket.error as e:
       # Multipath TCP is not supported, we fall back to regular TCP
       # and remember that Multipath TCP is not enabled
-      if e.errno == errno.ENOPROTOOPT or e.errno == errno.ENOPROTONOSUPPORT :
+      if e.errno == errno.ENOPROTOOPT or e.errno == errno.EPROTONOSUPPORT :
         _use_mptcp = False
         
   # Multipath TCP does not work or socket failed, we try TCP
