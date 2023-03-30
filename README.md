@@ -16,6 +16,7 @@ The following examples show how enable Multipath TCP with different programming 
  - [Using Multipath TCP in python](python/README.md)
  - [Using Multipath TCP in perl](perl/README.md)
  - [Using Multipath TCP in Rust](rust/README.md)
+ - [Using Multipath TCP in Go](go/README.md)
 
 
 
