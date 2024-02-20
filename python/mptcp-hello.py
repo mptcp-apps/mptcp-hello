@@ -20,7 +20,7 @@ def create_socket(sockaf):
   if _use_mptcp :  
     try:
       return socket.socket(sockaf, socket.SOCK_STREAM, IPPROTO_MPTCP)
-    except socket.error as e:
+    except OSError as e:
       # Multipath TCP is not supported, we fall back to regular TCP
       # and remember that Multipath TCP is not enabled
       if e.errno == errno.ENOPROTOOPT or \
