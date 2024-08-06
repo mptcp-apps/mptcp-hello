@@ -8,10 +8,15 @@ Enabling Multipath TCP in an applications on an operating system supporting it i
 
 The following examples show how enable Multipath TCP with different programming languages:
 
- - [Using Multipath TCP in C](c/README.md)
- - [Using Multipath TCP in python](python/README.md)
- - [Using Multipath TCP in perl](perl/README.md)
- - [Using Multipath TCP in Rust](rust/README.md)
+- On Linux
+  - [Using Multipath TCP in C](c/README.md)
+  - [Using Multipath TCP in python](python/README.md)
+  - [Using Multipath TCP in perl](perl/README.md)
+  - [Using Multipath TCP in Rust](rust/README.md)
+
+- On iOS
+  - [Using Multipath TCP in objective-C](objective-c/README.md)
+  - [Using Multipath TCP in Swift](swift/README.md)
 
 
 
