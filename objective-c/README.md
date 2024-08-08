@@ -1,4 +1,4 @@
-# Using Multipath TCP in Objective-C
+# Using Multipath TCP in Objective-C on iOS
 
 To use Multipath TCP in Objective-C, you simply need to change a bit the configuration given to `NSURLSession`, by selecting a Multipath TCP mode. The list of available modes is given in [the official documentation](https://developer.apple.com/documentation/foundation/nsurlsessionmultipathservicetype) Note however that Multipath TCP is only available if the target platform is an iOS device, so it might be interesting to use a macro that enables it only if we are building for iOS. Here is an example:
 
