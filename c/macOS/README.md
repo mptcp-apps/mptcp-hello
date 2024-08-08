@@ -12,4 +12,4 @@ nw_parameters_set_multipath_service(params, nw_multipath_service_handover);
 nw_connection_t connection = nw_connection_create(endpoint, params);
 ```
 
-Please, note however that the aggregate mode doesn't seem to work according to our tests, and only client side MPTCP is supported currently..
+Please, note that currently, the _Aggregate_ mode doesn't seem to work according to our tests. Also, only the client side is supported.
