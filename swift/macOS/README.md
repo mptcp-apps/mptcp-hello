@@ -12,4 +12,4 @@ params.multipathServiceType = .handover
 let connection = NWConnection(to: server, using: params)
 ```
 
-Please, note however that the aggregate mode doesn't seem to work according to our tests.
+Please, note however that the aggregate mode doesn't seem to work according to our tests, and only client side MPTCP is supported currently.

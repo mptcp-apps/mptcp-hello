@@ -1,6 +1,6 @@
 # Using Multipath TCP in Objective-C on iOS
 
-To use Multipath TCP in Objective-C, you simply need to change a bit the configuration given to `NSURLSession`, by selecting a Multipath TCP mode. The list of available modes is given in [the official documentation](https://developer.apple.com/documentation/foundation/nsurlsessionmultipathservicetype) Note however that Multipath TCP is only available if the target platform is an iOS device, so it might be interesting to use a macro that enables it only if we are building for iOS. Here is an example:
+To use Multipath TCP in Objective-C, you simply need to change a bit the configuration given to `NSURLSession`, by selecting a Multipath TCP mode. The list of available modes is given in [the official documentation](https://developer.apple.com/documentation/foundation/nsurlsessionmultipathservicetype). Note however that enabling MPTCP on `NSURLSession` can only be done on iOS, it isn't supported yet on OSX. Here is an example:
 
 ```objc
 NSURLSessionConfiguration *conf = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -14,3 +14,4 @@ NSURLSession *session = [NSURLSession sessionWithConfiguration:conf];
 ```
 
 In this repository, you'll also find categories that extend the `NSURLSession` and `NSURLSessionConfiguration`, which allows having a single shared instance, called `sharedMPTCPSession`, for `NSURLSession` with Multipath TCP enabled in handover mode.
+Another remark: only client side MPTCP is supported currently.

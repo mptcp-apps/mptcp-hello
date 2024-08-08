@@ -9,7 +9,7 @@
 #include <string.h>
 #include <Network/Network.h>
 
-dispatch_semaphore_t semaphore;
+static dispatch_semaphore_t semaphore;
 
 void get(char *path, nw_connection_t conn, dispatch_queue_t queue){
     char req[1024];
@@ -36,7 +36,7 @@ void get(char *path, nw_connection_t conn, dispatch_queue_t queue){
         dispatch_data_apply(content, ^bool(dispatch_data_t  _Nonnull region, size_t offset, const void * _Nonnull buffer, size_t size) {
             char res[size+1];
             memcpy(res, buffer, size);
-            *(res + size) = '\0';
+            res[size] = '\0';
             printf("Received %ld bytes from server:\n%s\n", size, res);
             dispatch_semaphore_signal(semaphore);
             return true;
