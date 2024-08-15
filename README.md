@@ -10,6 +10,8 @@ The following examples show how enable Multipath TCP with different programming 
 
 - On Linux:
   - [Using Multipath TCP in C](c/linux/README.md)
+  - [Using Multipath TCP in Elixir](elixir/README.md)
+  - [Using Multipath TCP in Erlang](erlang/README.md)
   - [Using Multipath TCP in python](python/README.md)
   - [Using Multipath TCP in perl](perl/README.md)
   - [Using Multipath TCP in Rust](rust/README.md)
